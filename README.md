@@ -143,6 +143,14 @@ python habitatlab_example.py
 
 运行过程中，终端显示环境初始化成功，并生成了类似 `skokloster-castle.glb_3662.mp4` 的视频文件。画面里可以看到 RGB 视角、深度信息和地图轨迹，这让我第一次比较直观地看到：具身导航不一定一开始就要在真实机器人上完成，也可以先在虚拟环境中让 agent 观察场景、执行动作、记录路线。
 
+运行截图：
+
+![Habitat 随机导航 demo 运行截图](assets/habitat-random-demo.png)
+
+视频结果截图：
+
+![Habitat demo 视频结果截图](assets/habitat-video-result.png)
+
 我目前还没有深入理解 Habitat 的内部机制，但先知道了它在具身智能里的作用：提供一个可控的虚拟环境，让 agent 在里面完成导航任务。这和前面理解的“感知-决策-控制-反馈”闭环是对应的。
 
 这个实践对我来说更像是先跑通一个入口：知道云环境、仿真场景、agent 行动、RGB/深度/地图输出之间大概是什么关系。后面如果继续学具身导航，再回来补 Habitat Lab、Habitat Sim 和具体导航算法。
